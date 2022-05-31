@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh; 
+    margin: 0;
+    overflow: hidden;
+}
+
+.container{
+    text-align: center;
+}
+.container-progresso{
+    display: flex;
+    justify-content:space-between;
+
+    max-width: 100%;
+    width: 400px;
+
+    margin-bottom: 20px;
+
+    position: relative;
+}
+
+.container-progresso::before{
+    content: ''; /* quando usar pseudo-elemento ::before, tem que colocar content com uma string vazia para aparecer na tela */
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    height: 5px;
+    width: 100%; 
+    
+    z-index:-1; /* movendo para atrás do número */
+    
+}
+
+.progresso{
+    background-color: #3498db;
+    position: absolute;
+    top: 40%;
+    left: 0;
+
+    height: 5px;
+    width: 0%; 
+    
+    z-index:-1; /* movendo para atrás do número */
+    transition: .4s ease;
+}
+
+.circulo{
+    background-color: white;
+    color: #e0e0e0;
+    
+    border-radius: 50%;
+    border: 2px solid #e0e0e0;
+
+    height: 25px;
+    width: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .4s ease;
+}
+
+.circulo.ativo{
+    background-color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.btn{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    margin: 5px;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    cursor: pointer;
+}
+
+.btn:active{
+    transform:scale(0.98)  /* efeito no botão */
+}
+
+.btn:disabled{
+    background-color: #e0e0e0;
+    cursor: not-allowed
+}

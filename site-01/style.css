@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'verdana', sans-serif;
+    margin: 0;
+    /* padding: 0px 20px; */
+    width: 100vw;
+    
+}
+
+/* Header */
+.cabecalho{
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: black;
+    letter-spacing: 4px;
+    padding: 0px 20px;
+
+    width: 100%;
+    height: 55px;
+    /* border-bottom: 1px solid black; */
+}
+
+.cabecalho-logo{
+    padding: 10px 10px;
+}
+
+.cabecalho-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho-links > ul{
+    display: flex;
+}
+
+.cabecalho-links li{
+    list-style-type: none;
+    margin-left: 1rem;
+    padding: 10px 10px;
+}
+
+.cabecalho-links a{
+    color: black;
+}
+
+.cabecalho-logo:hover,
+.cabecalho-links li:hover{
+    background-color: #CCCCCC;
+}
+
+/* Imagem com texto dentro */
+
+.conteudo-imagem-texto{
+    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    aspect-ratio: auto 1500 / 800; 
+}
+
+.conteudo-imagem-texto > div{
+    font-size: 2rem;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.conteudo-imagem-texto strong{
+    background-color: rgba(0, 0, 0, 0.767);
+    color: rgba(255, 255, 255, 0.788);
+    padding: 10px 15px;
+}
+
+/* Conteudo principal */
+
+.conteudo{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+    margin: 0px 40px;
+    width: 100vw;
+}
+
+.secao-projetos:not(:first-child){
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.projetos{
+    background-size: cover;
+    background-position: center;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 200px;
+    height: 100px;
+    
+
+}
+
+.projetos-summer{
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+
+.projetos-brick{
+    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
+}
+
+.projetos-renovated{
+    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
+}
+
+.projetos-barn{
+    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+}
+

@@ -1,0 +1,95 @@
+body{
+    background-color: #191630;
+}
+
+#retangulo{
+    height: 100px;
+    width: 200px;
+
+    background-color: #7564e0;
+    color: whitesmoke;
+    margin: auto;
+
+    border-style: none;
+    font-size: 20px;
+
+
+    border-radius: 8px;
+    box-shadow: #483D8B 4px 4px 2px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+#retangulo:active{
+    transform: translateY(4px) translateX(4px) ;
+    box-shadow: #483D8B 0px 0px 0px;
+}
+
+
+/*-----------------------------------Circulo-----------------------------------*/
+
+#circulo{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border-style: none;
+
+    background-color: crimson;
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 100px;
+
+    box-shadow: black 3px 3px 2px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 200ms, box-shadow 200ms;
+}
+
+
+
+#circulo:active{
+    transform: translateY(3px) translateX(3px);
+    box-shadow: black 0px 0px 0px;
+}
+
+
+
+
+/*-----------------------------------teste-----------------------------------*/
+
+
+#teste{
+    background-color: black;
+    color: whitesmoke;
+
+    font-family: monospace;
+    font-size: 2em;
+
+    height: 100px;
+    width: 200px;
+
+    border-style: solid;
+    border-color: whitesmoke;
+    border-radius: 20px;
+    margin: 100px;
+
+    box-shadow: black 4px 4px 0px;
+
+}
+
+#teste:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.5s ease-out;
+}
+
+#teste:active{
+    transform: translateX(3px) translateY(3px);
+    box-shadow: black 0px 0px 0px;
+}

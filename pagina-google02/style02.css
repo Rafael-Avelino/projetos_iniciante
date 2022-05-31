@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 48px;
+    width: 100%;
+
+    font-family: Arial, sans-serif;
+}
+
+.menu__section {
+    display: flex;
+    align-items: center;
+}
+
+.menu__section.left .menu__icon{
+    padding: 12px;
+}
+
+.menu__section .menu__links{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    margin-right: 16px;
+
+    color: rgb(117,117,117);
+
+    padding: 12px 8px;
+
+}
+
+.menu__links.ativo{
+    color: rgb(66, 133, 244);
+    border-bottom: 2px solid rgb(66, 133, 244);
+}
+
+.menu__links:not(.ativo){
+    margin-bottom: 2px ;
+}
+
+.menu__section.right{
+    margin-right: 4px;
+}
+
+.menu__section.right .menu__icon{
+    padding: 12px;
+}
+
+.menu__profile{
+    position: relative;
+}
+
+.menu__avatarframe{
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 1px;
+}
+
+.menu__avatar{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+/*main*/
+
+.conteudo{
+    display: flex;
+    flex: 1;
+    padding: 56px 8px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.conteudo__logo{
+
+    height: 56px;
+}
+
+.conteudo__pesquisa{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 18px;
+
+    width: 100%;
+    max-width: 700px;
+
+    color: rgba(0,0,0,0.80);
+    background: transparent;
+
+    border-radius: 25px;
+    border: 1px solid rgb(218, 220, 224);
+}
+.conteudo__referencia{
+    margin-top: 18px;
+    padding: 4px;
+}
+
+/*footer*/
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    background: #f4f4f4;
+
+    padding: 8px;
+}
+
+.rodape__session:not(:first-child){
+    border-top: 1px solid ;
+    color: rgb(228, 228, 228);
+}
+
+.rodape__local{
+    font-size: 18px;
+    padding: 4px;
+    color: rgba(0,0,0,0.7);
+}
+
+.rodape__links nav{
+    padding: 4px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media(min-width: 700px){
+    .conteudo__logo{
+        height: 150px;
+    }
+
+    .conteudo{
+        padding: 120px;
+    }
+}

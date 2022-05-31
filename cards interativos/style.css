@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Muli',sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.painel{
+    height: 80vh;
+    width: 10vw;
+
+    background-size: cover; /*imagem vai cobrir todo painel*/
+    background-position: center; /* centralizando imagem */
+    background-repeat: no-repeat;
+
+    color: white;
+
+    border-radius: 50px;
+    margin: 10px;
+    
+
+    flex: 0.5; /* definindo o tamanho de cada painel */
+    position: relative; /* o texto vai ficar com position absolute en relação ao painel */
+    transition: flex 0.6s ease-in ;
+}
+
+
+.painel h3{
+    position: absolute;
+    bottom: 20px; /* posicionamento */
+    left: 20px; /* posicionamento */
+
+    font-size: 24px;
+
+    opacity: 0; /* escondendo o h3, ele só irá ser mostrado quando o painel estiver ativo */
+}
+
+.painel.active{
+    flex:5;  /* aumentando o tamanho quando o painel estiver ativo */
+}
+
+.painel.active h3{
+    opacity: 1; /* mostrando o h3 */
+}
+
+/* quando a tela ficar menor que 480px o container vai ficar maior e dois paineis vão desaparecer*/
+
+@media (max-width: 450px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .painel:nth-of-type(4),.painel:nth-of-type(5){
+        display: none;
+    }
+}

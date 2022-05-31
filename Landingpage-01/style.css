@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #201b2c;
+}
+
+    body * {
+        box-sizing: border-box;
+    }
+
+main{
+    width: 100vw; /* (Responsivo) Dizendo para a largura do main cobrir 100% da viewport */ 
+    height: 100vh; /* (Responsivo) Dizendo para a altura do main cobrir 100% da viewport */ 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    width: 50vw;  /* (Responsivo) 50% da tela pra esquerda*/
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left h1{
+    font-size: 3vw;
+    color: #77ffc0;
+}
+
+
+.left .left-image{
+    width: 35vw;
+}
+
+.right{
+    width: 50vw; /* (Responsivo) 50% da tela pra direita*/
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_login{
+    width: 60%; /* Utilizando 60% da section da direita, sendo que ela tem 50vw */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2f2841;
+
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card_login h1{
+    color: #00ff88;
+    font-weight: 800;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Quando flex-direction é column, as propriedades align-items e justify-content se invertem */
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.texto input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+
+    background-color: #514869;
+    color: #f0ffffde;
+
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+}
+
+.texto label{
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+.texto input::placeholder{
+    color: #f0ffff94;
+}
+
+.botao{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #2b134b;
+    background-color: #00ff88;
+
+    cursor: pointer;
+
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+@media only screen and (max-width: 950px){
+    .card_login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:650px){  /* Responsividade para telas de celular */
+    main{
+        flex-direction: column;   /* Ao invés de ficar lado a lado, as sections ficarão em coluna */
+    }
+
+    .left h1{
+        display: none;  /* Tirando o título quando entrar na forma de celular */
+    }
+
+    .left{
+        width: 100%;  /* Ajustando a largura da section.left */
+        height: auto;
+    }
+
+    .right{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image{   /* Aumentando a largura da .left-image */
+        width: 50vw; 
+    }
+
+
+}
