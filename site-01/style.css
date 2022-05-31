@@ -8,16 +8,20 @@
 body{
     font-family: 'verdana', sans-serif;
     margin: 0;
-    /* padding: 0px 20px; */
     width: 100vw;
     
+}
+
+ul{
+    margin:0;
 }
 
 /* Header */
 .cabecalho{
     font-weight: 300;
-    font-size: 15px;
+    font-size: 14px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
@@ -26,9 +30,19 @@ body{
     padding: 0px 20px;
 
     width: 100%;
-    height: 55px;
+    height: auto;
     /* border-bottom: 1px solid black; */
+
 }
+
+.cabecalho-cabecalho{
+    width: 100%;
+     margin: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 
 .cabecalho-logo{
     padding: 10px 10px;
@@ -61,7 +75,7 @@ body{
 
 /* Imagem com texto dentro */
 
-.conteudo-imagem-texto{
+.cabecalho-imagem-texto{
     background-image: url(https://www.w3schools.com/w3images/architect.jpg);
     background-position: center;
     background-size: cover;
@@ -69,69 +83,99 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    aspect-ratio: auto 1500 / 800; 
-}
+    
 
-.conteudo-imagem-texto > div{
+    width: 100vw;
+    height: 700px;
+ 
+
     font-size: 2rem;
     color: white;
     letter-spacing: 4px;
 }
 
-.conteudo-imagem-texto strong{
+
+.cabecalho-imagem-texto strong{
     background-color: rgba(0, 0, 0, 0.767);
     color: rgba(255, 255, 255, 0.788);
     padding: 10px 15px;
 }
 
+
+
 /* Conteudo principal */
 
 .conteudo{
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center; 
+    box-sizing: inherit;
 
-    margin: 0px 40px;
+    margin: 45px 0px;
+    padding: 0px 15px;
     width: 100vw;
 }
 
-.secao-projetos:not(:first-child){
+.secao-projetos{
+    width: 100%;
+    flex-direction: column;
+}
 
+.secao-projetos > h1{
+    width: 100%;
+    padding: 20px;
+
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.secao-projetos-primeira, 
+.secao-projetos-segunda {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom:16px;
+}
+
+.secao-projetos-primeira > div, 
+.secao-projetos-segunda > div {
+
+    display: inline-block;
+    box-sizing: inherit;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    background-size: cover;
+    background-position: center;
+
+    max-height: 206px;
+    max-width: 310px;
+    
+    width: 100%;
+    height: 100%;
+
+    margin-left: 15px ;
     
 }
 
 .projetos{
-    background-size: cover;
-    background-position: center;
-
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-
-
-    width: 200px;
-    height: 100px;
+    position: relative;
+}
+.projetos h1{
+    position: absolute;
+    left: 0;
+    top: 0;
     
+    margin: 0;
+    
+    font-size: 15px;
+    font-weight: 400;
 
-}
-
-.projetos-summer{
-    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
-}
-
-.projetos-brick{
-    background-image: url("https://www.w3schools.com/w3images/house2.jpg");
-}
-
-.projetos-renovated{
-    background-image: url("https://www.w3schools.com/w3images/house3.jpg");
-}
-
-.projetos-barn{
-    background-image: url("https://www.w3schools.com/w3images/house5.jpg");
+    padding: 8px 16px;
+    background-color: #000000;
+    color: #fff;
+    
 }
 
