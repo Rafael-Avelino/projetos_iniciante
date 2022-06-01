@@ -19,7 +19,7 @@ ul{
 /* Header */
 .cabecalho{
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,7 +27,6 @@ ul{
 
     color: black;
     letter-spacing: 4px;
-    padding: 0px 20px;
 
     width: 100%;
     height: auto;
@@ -36,16 +35,25 @@ ul{
 }
 
 .cabecalho-cabecalho{
+    position: fixed;
+    z-index: 1;
+
+    left: 0;
+    top: 0;
     width: 100%;
-     margin: 5px 0px;
+    padding: 8px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    background-color: white;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.2);
+    
 }
 
 
 .cabecalho-logo{
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 
 .cabecalho-links{
@@ -61,7 +69,7 @@ ul{
 .cabecalho-links li{
     list-style-type: none;
     margin-left: 1rem;
-    padding: 10px 10px;
+    padding: 10px 15px;
 }
 
 .cabecalho-links a{
@@ -76,29 +84,31 @@ ul{
 /* Imagem com texto dentro */
 
 .cabecalho-imagem-texto{
-    background-image: url(https://www.w3schools.com/w3images/architect.jpg);
-    background-position: center;
-    background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
     
-
     width: 100vw;
-    height: 700px;
  
-
     font-size: 2rem;
     color: white;
     letter-spacing: 4px;
+
+    position: relative;
 }
 
-
+.cabecalho-imagem-texto > span{
+    position: absolute;
+}
 .cabecalho-imagem-texto strong{
     background-color: rgba(0, 0, 0, 0.767);
     color: rgba(255, 255, 255, 0.788);
     padding: 10px 15px;
+}
+
+.cabecalho-imagem-texto > img{
+    max-width: 100%;
+    
 }
 
 
@@ -107,35 +117,41 @@ ul{
 
 .conteudo{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
     box-sizing: inherit;
 
     margin: 45px 0px;
-    padding: 0px 15px;
-    width: 100vw;
+    
+    width: 100%;
 }
 
 .secao-projetos{
     width: 100%;
-    flex-direction: column;
+    padding: 8px 16px;
 }
 
-.secao-projetos > h1{
+.titulo{
     width: 100%;
-    padding: 20px;
-
+    padding: 16px 16px;
+    margin-bottom: 32px;
+}
+.titulo > h1{
+    padding: 20px 0px;
     font-size: 21px;
     font-weight: lighter;
+
+    border-bottom: 1px solid #cccccc41;
 }
 
 .secao-projetos-primeira, 
 .secao-projetos-segunda {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom:16px;
+    align-items: center;   
+        
+    padding: 0px 8px 15px;
 }
 
 .secao-projetos-primeira > div, 
@@ -145,7 +161,7 @@ ul{
     box-sizing: inherit;
     
     align-items: center;
-    justify-content: space-between;
+    
 
     background-size: cover;
     background-position: center;
@@ -155,10 +171,10 @@ ul{
     
     width: 100%;
     height: 100%;
-
-    margin-left: 15px ;
     
+    margin: 0px 8px;
 }
+
 
 .projetos{
     position: relative;
@@ -179,3 +195,67 @@ ul{
     
 }
 
+
+/* Seção sobre */
+
+.secao-sobre{
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.secao-sobre-paragrafo{
+    padding: 0px 8px 15px;
+}
+
+.secao-sobre-paragrafo>p{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.equipe{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.equipe-colaboradores{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px 8px;
+}
+
+.equipe-colaboradores > img {
+    width: 100%;
+}
+
+.equipe-colaboradores > h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+
+    margin: 10px 0px;
+}
+
+.equipe-colaboradores p:not(:nth-child(4)){
+    font-size: 15px;
+    color: rgba(0,0,0,0.6);
+    margin: 15px 0px;
+}
+
+.equipe-colaboradores > p{
+    font-size: 15px;
+    margin: 15px 0px;
+    text-align: left;    
+}
+
+.equipe-colaboradores > input{
+    border: none;
+    padding: 8px 16px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
