@@ -9,7 +9,7 @@ body{
     font-family: 'verdana', sans-serif;
     margin: 0;
     width: 100vw;
-    
+    line-height: 1.5;
 }
 
 ul{
@@ -29,9 +29,7 @@ ul{
     letter-spacing: 4px;
 
     width: 100%;
-    height: auto;
-    /* border-bottom: 1px solid black; */
-
+    height: auto;  
 }
 
 .cabecalho-cabecalho{
@@ -88,6 +86,7 @@ ul{
     align-items: center;
     justify-content: center;
     
+    
     width: 100vw;
  
     font-size: 2rem;
@@ -107,7 +106,7 @@ ul{
 }
 
 .cabecalho-imagem-texto > img{
-    max-width: 100%;
+    max-width: 100%;   
     
 }
 
@@ -141,7 +140,6 @@ ul{
     padding: 20px 0px;
     font-size: 21px;
     font-weight: lighter;
-
     border-bottom: 1px solid #cccccc41;
 }
 
@@ -228,6 +226,7 @@ ul{
 
 .equipe-colaboradores > img {
     width: 100%;
+    filter: grayscale(80%)
 }
 
 .equipe-colaboradores > h3{
@@ -258,4 +257,85 @@ ul{
     font-size: 15px;
 
     cursor: pointer;
+}
+
+
+/* Seção contato*/
+
+
+.secao-contato{
+    width: 100%;
+    padding: 30px 32px;
+   
+}
+
+.titulo-contato{
+    width: 100%;
+    
+    margin-bottom: 0px;
+}
+.titulo-contato > h1{
+    padding: 20px 0px;
+    font-size: 24px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid #cccccc41;
+}
+
+.secao-contato-paragrafo{
+   font-size: 15px;
+}
+
+.secao-contato-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.secao-contato-form .input-contato{
+    width: 100%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #cccccc;
+}
+
+.secao-contato-form .input-contato:focus{
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.secao-contato-form .botao{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.secao-contato-form .btn-contato{
+    padding: 10px 20px;
+    border: none;
+    margin-top: 20px;
+
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+    color: white;
+
+    cursor: pointer;    
+}
+
+.secao-contato-form .btn-contato:hover{
+    background-color: #CCCCCC;
+    color: black;
+}
+
+.imagem-final{
+    width: 100%;
+    margin-top: 32px 0px;
 }
