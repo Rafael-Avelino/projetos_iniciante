@@ -49,6 +49,9 @@ ul{
     
 }
 
+.cabecalho-logo a{
+    color: black;
+}
 
 .cabecalho-logo{
     padding: 10px 15px;
@@ -259,6 +262,10 @@ ul{
     cursor: pointer;
 }
 
+.equipe-colaboradores > input:hover{
+    background-color: #CCCCCC;
+}
+
 
 /* Seção contato*/
 
@@ -320,7 +327,7 @@ ul{
 .secao-contato-form .btn-contato{
     padding: 10px 20px;
     border: none;
-    margin-top: 20px;
+    margin:20px 0px 50px 0px;
 
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
@@ -338,4 +345,37 @@ ul{
 .imagem-final{
     width: 100%;
     margin-top: 32px 0px;
+}
+
+/* Footer  */
+
+
+footer{
+    width: 100vw;
+    height: auto;
+    margin:-72px 0px;
+    padding: 16px 0px;
+
+    background-color: #000;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    margin: 16px 0px;
+}
+
+p > a{
+    text-decoration: underline;
+    color: #fff;
+}
+
+p > a:hover{
+    color:#4CAF50;
 }
